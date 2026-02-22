@@ -5,20 +5,20 @@
 class Cloudterminal < Formula
   desc "Terminal multiplexer for Claude Code sessions"
   homepage "https://github.com/tmyktmyc/BlinkingLine-cloudterminal"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.3.0/cloudterminal_0.3.0_darwin_amd64.tar.gz"
-      sha256 "462c3a54621f0a2e6af7a5e3aea39b77f4001fc152502cc2e5f7279b3b600291"
+      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.4.0/cloudterminal_0.4.0_darwin_amd64.tar.gz"
+      sha256 "cf5bccf76d0dbd36c502fa3057f853292afaaa218f600ede97e6bcd8e7cc43f4"
 
       define_method(:install) do
         bin.install "cloudterminal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.3.0/cloudterminal_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f1f661bb8e98123ea814ec1a4427763970b1525850e8d7908baf9aaa19a798e9"
+      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.4.0/cloudterminal_0.4.0_darwin_arm64.tar.gz"
+      sha256 "081620d3a2eb5cc06a5140cbabf3b470a861e53c0ca9fcb9fa0bf3c33ca45bab"
 
       define_method(:install) do
         bin.install "cloudterminal"
@@ -28,15 +28,15 @@ class Cloudterminal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.3.0/cloudterminal_0.3.0_linux_amd64.tar.gz"
-      sha256 "b93da44a9b521023ac9ceb15bf1286e4c59dd7594c497df642f28e957d0f0da2"
+      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.4.0/cloudterminal_0.4.0_linux_amd64.tar.gz"
+      sha256 "0b73ed015cb3ea66e203e59991de9e927c6253aee7d67efc46dfdb471cc5205f"
       define_method(:install) do
         bin.install "cloudterminal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.3.0/cloudterminal_0.3.0_linux_arm64.tar.gz"
-      sha256 "88ef344d72033e369926df34f9f94f561ffc48d7970e8712d619bda19c8ded55"
+      url "https://github.com/tmyktmyc/BlinkingLine-cloudterminal/releases/download/v0.4.0/cloudterminal_0.4.0_linux_arm64.tar.gz"
+      sha256 "f6e3ee82714847a78291faf72332ad5c35aeaff48b42e97432b4028d3efa69c6"
       define_method(:install) do
         bin.install "cloudterminal"
       end
